@@ -1,72 +1,62 @@
 package saucedemotest;
-import base.SetUp;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import base.CommonAPI;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.HomePage;
+import pages.LoginPage;
+import utility.ExcelReader;
+import utility.Utility;
 
-public class InvalidLoginTest extends SetUp {
+public class InvalidLoginTest extends CommonAPI {
+    Logger LOG = LogManager.getLogger(InvalidLoginTest.class.getName());
+    String username = prop.getProperty("username");
+    String password = prop.getProperty("password");
+    ExcelReader excelReader = new ExcelReader("C:\\Users\\PNT\\eclipse-workspace\\Aug2023SeleniumProject1\\data\\data.xlsx", "data");
 
     @Test
     public void test1(){
-        String expectedTitle = "Swag Labs";
-        String actualTitle = driver.getTitle();
-        Assert.assertEquals(expectedTitle, actualTitle);
-        System.out.println("navigate to saucedemo app success");
+        LoginPage loginPage = new LoginPage(getDriver());
 
-        // Find the username and password
-        WebElement usernameField = driver.findElement(By.id("user-name"));
-        System.out.println("username field found");
-        WebElement passwordField = driver.findElement(By.id("password"));
-        System.out.println("password field found");
-        WebElement loginButton = driver.findElement(By.id("login-button"));
-        System.out.println("login button found");
+        String expectedTitle = excelReader.getCellValueForGivenKey("Login Page Title");
+        String actualTitle = getCurrentTitle();
+        Assert.assertEquals(expectedTitle, actualTitle);
+        LOG.info("navigate to saucedemo app success");
 
         // Enter a valid username and password
-        usernameField.sendKeys("standard_user");
-        System.out.println("type username success");
-        passwordField.sendKeys("");
-        System.out.println("type password success");
+        loginPage.typeUsername(username);
+        loginPage.typePassword("");
 
         // Click the login button
-        loginButton.click();
-        System.out.println("click on login button success");
+        loginPage.clickOnLoginBtn();
 
         // Check if the login is successful (verify that we are on the inventory page)
-        String expectedError = "Epic sadface: Password is required";
-        String actualError =  driver.findElement(By.cssSelector(".error-message-container.error h3")).getText();
+        String expectedError = excelReader.getCellValueForGivenKey("Missing Password Error");
+        String actualError =  loginPage.getErrorMessage();
         Assert.assertEquals(expectedError, actualError);
-        System.out.println("validate error message success");
+        LOG.info("validate error message success");
     }
     @Test
     public void test2(){
-        String expectedTitle = "Swag Labs";
-        String actualTitle = driver.getTitle();
-        Assert.assertEquals(expectedTitle, actualTitle);
-        System.out.println("navigate to saucedemo app success");
+        LoginPage loginPage = new LoginPage(getDriver());
 
-        // Find the username and password
-        WebElement usernameField = driver.findElement(By.id("user-name"));
-        System.out.println("username field found");
-        WebElement passwordField = driver.findElement(By.id("password"));
-        System.out.println("password field found");
-        WebElement loginButton = driver.findElement(By.id("login-button"));
-        System.out.println("login button found");
+        String expectedTitle = "Swag Labs";
+        String actualTitle = getCurrentTitle();
+        Assert.assertEquals(expectedTitle, actualTitle);
+        LOG.info("navigate to saucedemo app success");
 
         // Enter a valid username and password
-        usernameField.sendKeys("");
-        System.out.println("type username success");
-        passwordField.sendKeys("secret_sauce");
-        System.out.println("type password success");
+        loginPage.typeUsername("");
+        loginPage.typePassword(password);
 
         // Click the login button
-        loginButton.click();
-        System.out.println("click on login button success");
+        loginPage.clickOnLoginBtn();
 
         // Check if the login is successful (verify that we are on the inventory page)
-        String expectedError = "Epic sadface: Username is required";
-        String actualError =  driver.findElement(By.cssSelector(".error-message-container.error h3")).getText();
+        String expectedError = excelReader.getCellValueForGivenKey("Missing Username Error");
+        String actualError =  loginPage.getErrorMessage();
         Assert.assertEquals(expectedError, actualError);
-        System.out.println("validate error message success");
+        LOG.info("validate error message success");
     }
 }

@@ -1,37 +1,36 @@
 package saucedemotest;
-import base.SetUp;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import base.CommonAPI;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.HomePage;
+import pages.LoginPage;
+import utility.ExcelReader;
 
 
-public class ValidLoginTest extends SetUp {
+public class ValidLoginTest extends CommonAPI {
+    Logger LOG = LogManager.getLogger(ValidLoginTest.class.getName());
+    String username = prop.getProperty("username");
+    String password = prop.getProperty("password");
+    ExcelReader excelReader = new ExcelReader("C:\\Users\\PNT\\eclipse-workspace\\Aug2023SeleniumProject1\\data\\data.xlsx", "Data");
 
     @Test
     public void test1() {
-        // Find the username and password
-        WebElement usernameField = driver.findElement(By.id("user-name"));
-        System.out.println("username field found");
-        WebElement passwordField = driver.findElement(By.id("password"));
-        System.out.println("password field found");
-        WebElement loginButton = driver.findElement(By.id("login-button"));
-        System.out.println("login button found");
+        LoginPage loginPage = new LoginPage(getDriver());
+        HomePage homePage = new HomePage(getDriver());
 
         // Enter a valid username and password
-        usernameField.sendKeys("standard_user");
-        System.out.println("type username success");
-        passwordField.sendKeys("secret_sauce");
-        System.out.println("type password success");
+        loginPage.typeUsername(username);
+        loginPage.typePassword(password);
 
         // Click the login button
-        loginButton.click();
-        System.out.println("click on login button success");
+        loginPage.clickOnLoginBtn();
 
         //Check if the login is successful
-        String expectedHeader = "Products";
-        String actualHeader =  driver.findElement(By.cssSelector(".title")).getText();
+        String expectedHeader = excelReader.getCellValueForGivenKey("Home Page Header");
+        String actualHeader = homePage.getHeaderText();
         Assert.assertEquals(expectedHeader, actualHeader);
-        System.out.println("login to saucedemo app success");
+        LOG.info("login to saucedemo app success");
     }
 }

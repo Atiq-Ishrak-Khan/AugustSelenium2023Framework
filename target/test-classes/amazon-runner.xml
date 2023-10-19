@@ -11,7 +11,7 @@
     </test>
     <test name="select from the dropdown">
         <classes>
-<!--            <class name="amazontest.SelectProductTest"></class>-->
+            <class name="amazontest.SelectProductTest"></class>
         </classes>
     </test>
     <test name="hover over the language button">
