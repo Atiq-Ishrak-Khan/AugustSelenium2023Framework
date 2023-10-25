@@ -1,0 +1,5 @@
+amazontest\SelectProductTest.class
+saucedemotest\InvalidLoginTest.class
+amazontest\AmazonSearchTest.class
+amazontest\LanguageTest.class
+saucedemotest\ValidLoginTest.class

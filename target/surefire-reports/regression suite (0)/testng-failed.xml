@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [regression suite (0)]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="useCloudEnv" value="false"/>
+  <parameter name="os" value="OS X"/>
+  <parameter name="envName" value="browserstack"/>
+  <parameter name="os_version" value="Big Sur"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="browser_version" value="110"/>
+  <parameter name="url" value="http://www.amazon.com"/>
+  <test thread-count="5" name="select from the dropdown(failed)" verbose="0">
+    <classes>
+      <class name="amazontest.SelectProductTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="afterEachTestMethod"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="test1"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- amazontest.SelectProductTest -->
+    </classes>
+  </test> <!-- select from the dropdown(failed) -->
+  <test thread-count="5" name="hover over the language button(failed)" verbose="0">
+    <classes>
+      <class name="amazontest.LanguageTest">
+        <methods>
+          <include name="test1"/>
+          <include name="setUp"/>
+          <include name="afterEachTestMethod"/>
+          <include name="extentSetup"/>
+          <include name="generateReport"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- amazontest.LanguageTest -->
+    </classes>
+  </test> <!-- hover over the language button(failed) -->
+</suite> <!-- Failed suite [regression suite (0)] -->

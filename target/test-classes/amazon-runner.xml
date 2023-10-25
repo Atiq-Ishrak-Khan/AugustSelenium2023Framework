@@ -2,8 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="regression suite">
+    <parameter name="useCloudEnv" value="false"></parameter>
+
+    <!--cloud parameters-->
+    <parameter name="envName" value="browserstack"></parameter>
+    <parameter name="os" value="OS X"></parameter>
+    <parameter name="os_version" value="Big Sur"></parameter>
+    <parameter name="browser_version" value="110"></parameter>
+    <!--local & cloud parameters-->
+    <parameter name="browserName" value="edge"></parameter>
     <parameter name="url" value="http://www.amazon.com"></parameter>
-    <parameter name="browserName" value="chrome"></parameter>
+
     <test name="login amazon test">
         <classes>
 <!--            <class name="amazontest.AmazonSearchTest"></class>-->

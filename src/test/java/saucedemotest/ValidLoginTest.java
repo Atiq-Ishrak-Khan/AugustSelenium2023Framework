@@ -16,7 +16,7 @@ public class ValidLoginTest extends CommonAPI {
     ExcelReader excelReader = new ExcelReader("C:\\Users\\PNT\\eclipse-workspace\\Aug2023SeleniumProject1\\data\\data.xlsx", "Data");
 
     @Test
-    public void test1() {
+    public void loginWithValidCredentials() {
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
 

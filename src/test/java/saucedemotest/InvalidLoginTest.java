@@ -16,7 +16,7 @@ public class InvalidLoginTest extends CommonAPI {
     ExcelReader excelReader = new ExcelReader("C:\\Users\\PNT\\eclipse-workspace\\Aug2023SeleniumProject1\\data\\data.xlsx", "data");
 
     @Test
-    public void test1(){
+    public void loginWithValidUsernameAndInvalidPassword(){
         LoginPage loginPage = new LoginPage(getDriver());
 
         String expectedTitle = excelReader.getCellValueForGivenKey("Login Page Title");
@@ -38,7 +38,7 @@ public class InvalidLoginTest extends CommonAPI {
         LOG.info("validate error message success");
     }
     @Test
-    public void test2(){
+    public void loginWithInvalidUsernameAndValidPassword(){
         LoginPage loginPage = new LoginPage(getDriver());
 
         String expectedTitle = "Swag Labs";
