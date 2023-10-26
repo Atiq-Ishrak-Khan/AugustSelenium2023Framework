@@ -185,3 +185,7 @@ Temporary Items
 .apdisk
 
 /lib
+/target
+/test-output
+/logs
+/Extent-Report
