@@ -7,13 +7,16 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
 import utility.ExcelReader;
+import utility.Utility;
+
+import java.io.File;
 
 
 public class ValidLoginTest extends CommonAPI {
     Logger LOG = LogManager.getLogger(ValidLoginTest.class.getName());
     String username = prop.getProperty("username");
     String password = prop.getProperty("password");
-    ExcelReader excelReader = new ExcelReader("C:\\Users\\PNT\\eclipse-workspace\\Aug2023SeleniumProject1\\data\\data.xlsx", "Data");
+    ExcelReader excelReader = new ExcelReader(Utility.path+ File.separator+"data"+File.separator+"data.xlsx", "Data");
 
     @Test
     public void loginWithValidCredentials() {

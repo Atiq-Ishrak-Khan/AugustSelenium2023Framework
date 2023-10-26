@@ -1,5 +1,6 @@
 package utility;
 
+import java.io.File;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -13,7 +14,7 @@ public class Utility {
     public static Properties loadProp(){
         Properties prop = new Properties();
         try {
-            InputStream inputStream = Files.newInputStream(Paths.get("C:\\Users\\PNT\\eclipse-workspace\\Aug2023SeleniumProject1\\src\\config.properties"));
+            InputStream inputStream = Files.newInputStream(Paths.get(path+ File.separator+"src"+File.separator+"config.properties"));
             prop.load(inputStream);
             inputStream.close();
         }catch (Exception e){

@@ -9,11 +9,13 @@ import pages.LoginPage;
 import utility.ExcelReader;
 import utility.Utility;
 
+import java.io.File;
+
 public class InvalidLoginTest extends CommonAPI {
     Logger LOG = LogManager.getLogger(InvalidLoginTest.class.getName());
     String username = prop.getProperty("username");
     String password = prop.getProperty("password");
-    ExcelReader excelReader = new ExcelReader("C:\\Users\\PNT\\eclipse-workspace\\Aug2023SeleniumProject1\\data\\data.xlsx", "data");
+    ExcelReader excelReader = new ExcelReader(Utility.path+ File.separator+"data"+File.separator+"data.xlsx", "Data");
 
     @Test
     public void loginWithValidUsernameAndInvalidPassword(){
