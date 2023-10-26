@@ -166,56 +166,7 @@ public class CommonAPI {
     public String getCurrentTitle(){
         return driver.getTitle();
     }
-    public String getElementTextNPOM(String cssOrXpath){
-        try {
-            return driver.findElement(By.cssSelector(cssOrXpath)).getText();
-        }catch (Exception e){
-            return driver.findElement(By.xpath(cssOrXpath)).getText();
-        }
-    }
-    public void clickOnNPOM(String cssOrXpath){
-        try {
-            driver.findElement(By.cssSelector(cssOrXpath)).click();
-        }catch (Exception e){
-            driver.findElement(By.xpath(cssOrXpath)).click();
-        }
-    }
-    public void typeNPOM(String cssOrXpath, String text){
-        try {
-            driver.findElement(By.cssSelector(cssOrXpath)).sendKeys(text);
-        }catch (Exception e){
-            driver.findElement(By.xpath(cssOrXpath)).sendKeys(text);
-        }
-    }
-    public void hoverOverNPOM(String cssOrXpath){
-        Actions actions = new Actions(driver);
-        try {
-            WebElement element = driver.findElement(By.cssSelector(cssOrXpath));
-            actions.moveToElement(element).build().perform();
-        }catch (Exception e){
-            WebElement element = driver.findElement(By.xpath(cssOrXpath));
-            actions.moveToElement(element).build().perform();
-        }
-    }
-    public void selectDropdownOptionNPOM(String cssOrXpath, String option){
-        try {
-            WebElement dropdown = driver.findElement(By.cssSelector(cssOrXpath));
-            Select select = new Select(dropdown);
-            try {
-                select.selectByValue(option);
-            }catch (Exception e){
-                select.selectByVisibleText(option);
-            }
-        }catch (Exception e){
-            WebElement dropdown = driver.findElement(By.xpath(cssOrXpath));
-            Select select = new Select(dropdown);
-            try {
-                select.selectByValue(option);
-            }catch (Exception ex){
-                select.selectByVisibleText(option);
-            }
-        }
-    }
+
     //------------------------------------------------------------------------------------------------------------------
     //reusable methods (page object model methods)
     //------------------------------------------------------------------------------------------------------------------
