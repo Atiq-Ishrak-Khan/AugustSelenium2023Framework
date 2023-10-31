@@ -64,7 +64,7 @@ public class ExcelReader {
     }
 
     public static void main(String[] args) {
-        ExcelReader excelReader = new ExcelReader("C:\\Users\\PNT\\eclipse-workspace\\Aug2023SeleniumProject1\\data\\data.xlsx","data");
+        ExcelReader excelReader = new ExcelReader("C:\\Users\\Owner\\Downloads\\Aug2023SeleniumProjectU1\\Aug2023SeleniumProject\\data\\test cases.xlsx","data");
         System.out.println(excelReader.getCellValueForGivenKey("Login Page Title"));
     }
 }

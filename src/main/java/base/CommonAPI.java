@@ -1,39 +1,51 @@
 package base;
 
 import com.relevantcodes.extentreports.LogStatus;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.annotations.Optional;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 import utility.Utility;
 
+import java.io.File;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Properties;
+import java.util.*;
 
 public class CommonAPI {
     Logger LOG = LogManager.getLogger(CommonAPI.class.getName());
     public Properties prop = Utility.loadProp();
     public WebDriver driver;
+
+    public CommonAPI(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
+
+    public CommonAPI() {
+    }
+
     int implicitWait = Integer.parseInt(prop.getProperty("wait.time", "10"));
     String windowMaximize = prop.getProperty("window.maximize", "true");
     String username = prop.getProperty("browserstack.username");
@@ -115,17 +127,24 @@ public class CommonAPI {
     }
     public void getLocalDriver(String browserName){
         if (browserName.equalsIgnoreCase("chrome")){
+            ChromeOptions opt = new ChromeOptions();
+            opt.addExtensions(new File(getAdBlockExtensionPath()));
+            WebDriverManager.chromedriver().setup();
             //launch the browser
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(opt);
             LOG.info("chrome browser launched");
         }else if (browserName.equalsIgnoreCase("firefox")){
+            WebDriverManager.firefoxdriver().setup();
             //launch the browser
             driver = new FirefoxDriver();
             LOG.info("firefox browser launched");
             System.out.println();
         }else if (browserName.equalsIgnoreCase("edge")){
+            EdgeOptions opt = new EdgeOptions();
+            opt.addExtensions(new File(getAdBlockExtensionPath()));
+            WebDriverManager.edgedriver().setup();
             //launch the browser
-            driver = new EdgeDriver();
+            driver = new EdgeDriver(opt);
             LOG.info("edge browser launched");
         }
     }
@@ -176,7 +195,20 @@ public class CommonAPI {
     public void clickOn(WebElement element){
         element.click();
     }
+    public void scrollToBottom(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+    }
+    public void scrollUp() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, 0);");
+    }
+    public void scrollToSection(WebElement sectionElement){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'start'});", sectionElement);
+    }
     public void type(WebElement element, String text){
+        element.clear();
         element.sendKeys(text);
     }
     public void hoverOver(WebElement element){
@@ -190,5 +222,56 @@ public class CommonAPI {
         }catch (Exception e){
             select.selectByValue(option);
         }
+    }
+
+    public String getRandomMail(){
+        // Fixed parts of the email address
+        String prefix = "user";
+        String domain = "@mail.com";
+
+        // Generate a random number
+        int randomNum = new Random().nextInt(100000);
+
+        // Combine the parts to create the random email address
+        String randomEmail = prefix + randomNum + domain;
+
+        return randomEmail;
+    }
+
+    public void closeAllTabsExceptFirstTab(){
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {}
+
+        // Capture the handle of the first tab (tab0)
+        String firstTabHandle = driver.getWindowHandles().toArray()[0].toString();
+
+        // Switch back to the first tab (tab0)
+        driver.switchTo().window(firstTabHandle);
+
+        // Get the handle of the current tab (tab0)
+        String currentTabHandle = driver.getWindowHandle();
+
+        // Get a list of all open tab handles
+        Set<String> allTabHandles = driver.getWindowHandles();
+
+        // Iterate through tab handles and close tabs that are not the current tab
+        for (String tabHandle : allTabHandles) {
+            if (!tabHandle.equals(currentTabHandle)) {
+                driver.switchTo().window(tabHandle);
+                driver.close();
+            }
+        }
+
+        // Optionally, you can continue with other actions on the current tab
+        driver.switchTo().window(currentTabHandle);
+        driver.navigate().refresh();
+    }
+
+    public String getAdBlockExtensionPath(){
+        String relativeFilePath = "/src/test/resources/adblock.crx";
+        String projectRoot = System.getProperty("user.dir");
+        String absoluteFilePath = projectRoot + relativeFilePath;
+        return absoluteFilePath;
     }
 }

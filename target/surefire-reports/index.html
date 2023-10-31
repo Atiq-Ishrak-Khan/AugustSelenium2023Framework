@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-regression_suite" class="navigator-link">
-              <span class="suite-name border-passed">regression suite</span>
+              <span class="suite-name border-failed">regression suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-regression_suite" class="navigator-link ">
-                    <span>C:\Users\PNT\eclipse-workspace\Aug2023SeleniumProject1\src\test\resources\runner.xml</span>
+                    <span>D:\fiverr\zzz\atiqrafi\Aug2023SeleniumProject\src\test\resources\runner.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">26 methods, 1 failed,   25 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-regression_suite" class="hide-methods failed suite-regression_suite"> (hide)</a> <!-- hide-methods failed suite-regression_suite -->
+                      <a href="#" panel-name="suite-regression_suite" class="show-methods failed suite-regression_suite"> (show)</a> <!-- show-methods failed suite-regression_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-regression_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case21_AddReviewOnProduct" class="method navigator-link" hash-for-method="verifyAddReviewOnProduct">verifyAddReviewOnProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-regression_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +117,127 @@
                     <div class="method-list-content passed suite-regression_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-regression_suite" title="saucedemotest.InvalidLoginTest" class="method navigator-link" hash-for-method="loginWithInvalidUsernameAndValidPassword">loginWithInvalidUsernameAndValidPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case06_ContactUsTest" class="method navigator-link" hash-for-method="contactUsForm">contactUsForm</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-regression_suite" title="saucedemotest.ValidLoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case02_ValidLoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-regression_suite" title="saucedemotest.InvalidLoginTest" class="method navigator-link" hash-for-method="loginWithValidUsernameAndInvalidPassword">loginWithValidUsernameAndInvalidPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case03_InvalidLoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case04_LogoutUserTest" class="method navigator-link" hash-for-method="logoutUser">logoutUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case05_InvalidSignupTest" class="method navigator-link" hash-for-method="registerUserWithExistingEmail">registerUserWithExistingEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case09_SearchProductTest" class="method navigator-link" hash-for-method="searchProduct">searchProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case01_RegisterUserTest" class="method navigator-link" hash-for-method="signupWithValidCredentials">signupWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case12_AddProductCart" class="method navigator-link" hash-for-method="verifyAddProductsInCart">verifyAddProductsInCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case22_AddRecommendedItemInCart" class="method navigator-link" hash-for-method="verifyAddToCartFromRecommendedItems">verifyAddToCartFromRecommendedItems</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case23_AddressDetailsInCheckout" class="method navigator-link" hash-for-method="verifyAddressDetailsInCheckoutPage">verifyAddressDetailsInCheckoutPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case08_ProductsDetailsTest" class="method navigator-link" hash-for-method="verifyAllProductsAndProductDetailPage">verifyAllProductsAndProductDetailPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case20_SearchProductsVerifyCartAfterLoginTest" class="method navigator-link" hash-for-method="verifyCaseSearchProductsAndVerifyCartAfterLogin">verifyCaseSearchProductsAndVerifyCartAfterLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case24_DownloadPurchaseOrderInvoice" class="method navigator-link" hash-for-method="verifyDownloadInvoiceAfterPurchaseOrder">verifyDownloadInvoiceAfterPurchaseOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case16_PlaceOrderLoginBeforeCheckoutTest" class="method navigator-link" hash-for-method="verifyPlaceOrderLoginBeforeCheckout">verifyPlaceOrderLoginBeforeCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case15_PlaceOrderRegisterBeforeCheckoutTest" class="method navigator-link" hash-for-method="verifyPlaceOrderRegisterBeforeCheckout">verifyPlaceOrderRegisterBeforeCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case14_PlaceOrderRegisterWhileCheckoutTest" class="method navigator-link" hash-for-method="verifyPlaceOrderRegisterWhileCheckout">verifyPlaceOrderRegisterWhileCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case13_ProductQuantityCartTest" class="method navigator-link" hash-for-method="verifyProductQuantityInCart">verifyProductQuantityInCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case17_RemoveProductsFromCartTest" class="method navigator-link" hash-for-method="verifyRemoveProductsFromCart">verifyRemoveProductsFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case25_ScrollUpDownUsingArrowBtnTest" class="method navigator-link" hash-for-method="verifyScrollUpUsingArrowButtonAndScrollDownFunctionality">verifyScrollUpUsingArrowButtonAndScrollDownFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case26_ScrollUpWithoutArrowBtnAndScrollDown" class="method navigator-link" hash-for-method="verifyScrollUpWithoutArrowButtonAndScrollDownFunctionality">verifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case11_SubscriptionCartTest" class="method navigator-link" hash-for-method="verifySubscriptionInCartPage">verifySubscriptionInCartPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case10_SubscriptionTest" class="method navigator-link" hash-for-method="verifySubscriptionInHomePage">verifySubscriptionInHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case07_TestCasesPageTest" class="method navigator-link" hash-for-method="verifyTestCasesPage">verifyTestCasesPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case19_ViewCartBrandProductsTest" class="method navigator-link" hash-for-method="verifyViewAndCartBrandProducts">verifyViewAndCartBrandProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-regression_suite" title="automationexercise.Case18_ViewCategoryProductsTest" class="method navigator-link" hash-for-method="verifyViewCategoryProducts">verifyViewCategoryProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-regression_suite -->
@@ -128,24 +252,61 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-regression_suite" class="panel regression_suite">
-          <div class="suite-regression_suite-class-passed">
+          <div class="suite-regression_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">saucedemotest.InvalidLoginTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">automationexercise.Case21_AddReviewOnProduct</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithInvalidUsernameAndValidPassword">
-                  </a> <!-- loginWithInvalidUsernameAndValidPassword -->
-                  <span class="method-name">loginWithInvalidUsernameAndValidPassword</span>
+                  <a name="verifyAddReviewOnProduct">
+                  </a> <!-- verifyAddReviewOnProduct -->
+                  <span class="method-name">verifyAddReviewOnProduct</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@href=&apos;#reviews&apos;]&quot;}
+  (Session info: chrome=118.0.5993.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22d9386d80edaa06879a6ac63fe57615, findElement {using=xpath, value=//a[@href=&apos;#reviews&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Several\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64022}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64022/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 22d9386d80edaa06879a6ac63fe57615
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy32.getText(Unknown Source)
+	at base.CommonAPI.getElementText(CommonAPI.java:193)
+	at pages.ProductPageAE.verifyReviewTitleText(ProductPageAE.java:138)
+	at automationexercise.Case21_AddReviewOnProduct.verifyAddReviewOnProduct(Case21_AddReviewOnProduct.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-failed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case06_ContactUsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithValidUsernameAndInvalidPassword">
-                  </a> <!-- loginWithValidUsernameAndInvalidPassword -->
-                  <span class="method-name">loginWithValidUsernameAndInvalidPassword</span>
+                  <a name="contactUsForm">
+                  </a> <!-- contactUsForm -->
+                  <span class="method-name">contactUsForm</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -153,7 +314,22 @@
           <div class="suite-regression_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">saucedemotest.ValidLoginTest</span>
+              <span class="class-name">automationexercise.Case25_ScrollUpDownUsingArrowBtnTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyScrollUpUsingArrowButtonAndScrollDownFunctionality">
+                  </a> <!-- verifyScrollUpUsingArrowButtonAndScrollDownFunctionality -->
+                  <span class="method-name">verifyScrollUpUsingArrowButtonAndScrollDownFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case02_ValidLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -165,10 +341,340 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case13_ProductQuantityCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductQuantityInCart">
+                  </a> <!-- verifyProductQuantityInCart -->
+                  <span class="method-name">verifyProductQuantityInCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case17_RemoveProductsFromCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRemoveProductsFromCart">
+                  </a> <!-- verifyRemoveProductsFromCart -->
+                  <span class="method-name">verifyRemoveProductsFromCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case08_ProductsDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllProductsAndProductDetailPage">
+                  </a> <!-- verifyAllProductsAndProductDetailPage -->
+                  <span class="method-name">verifyAllProductsAndProductDetailPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case22_AddRecommendedItemInCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddToCartFromRecommendedItems">
+                  </a> <!-- verifyAddToCartFromRecommendedItems -->
+                  <span class="method-name">verifyAddToCartFromRecommendedItems</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case19_ViewCartBrandProductsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyViewAndCartBrandProducts">
+                  </a> <!-- verifyViewAndCartBrandProducts -->
+                  <span class="method-name">verifyViewAndCartBrandProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case05_InvalidSignupTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserWithExistingEmail">
+                  </a> <!-- registerUserWithExistingEmail -->
+                  <span class="method-name">registerUserWithExistingEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case07_TestCasesPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTestCasesPage">
+                  </a> <!-- verifyTestCasesPage -->
+                  <span class="method-name">verifyTestCasesPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case09_SearchProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct">
+                  </a> <!-- searchProduct -->
+                  <span class="method-name">searchProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case24_DownloadPurchaseOrderInvoice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDownloadInvoiceAfterPurchaseOrder">
+                  </a> <!-- verifyDownloadInvoiceAfterPurchaseOrder -->
+                  <span class="method-name">verifyDownloadInvoiceAfterPurchaseOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case20_SearchProductsVerifyCartAfterLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCaseSearchProductsAndVerifyCartAfterLogin">
+                  </a> <!-- verifyCaseSearchProductsAndVerifyCartAfterLogin -->
+                  <span class="method-name">verifyCaseSearchProductsAndVerifyCartAfterLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case14_PlaceOrderRegisterWhileCheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPlaceOrderRegisterWhileCheckout">
+                  </a> <!-- verifyPlaceOrderRegisterWhileCheckout -->
+                  <span class="method-name">verifyPlaceOrderRegisterWhileCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case10_SubscriptionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySubscriptionInHomePage">
+                  </a> <!-- verifySubscriptionInHomePage -->
+                  <span class="method-name">verifySubscriptionInHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case01_RegisterUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signupWithValidCredentials">
+                  </a> <!-- signupWithValidCredentials -->
+                  <span class="method-name">signupWithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case16_PlaceOrderLoginBeforeCheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPlaceOrderLoginBeforeCheckout">
+                  </a> <!-- verifyPlaceOrderLoginBeforeCheckout -->
+                  <span class="method-name">verifyPlaceOrderLoginBeforeCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case18_ViewCategoryProductsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyViewCategoryProducts">
+                  </a> <!-- verifyViewCategoryProducts -->
+                  <span class="method-name">verifyViewCategoryProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case11_SubscriptionCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySubscriptionInCartPage">
+                  </a> <!-- verifySubscriptionInCartPage -->
+                  <span class="method-name">verifySubscriptionInCartPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case26_ScrollUpWithoutArrowBtnAndScrollDown</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyScrollUpWithoutArrowButtonAndScrollDownFunctionality">
+                  </a> <!-- verifyScrollUpWithoutArrowButtonAndScrollDownFunctionality -->
+                  <span class="method-name">verifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case15_PlaceOrderRegisterBeforeCheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPlaceOrderRegisterBeforeCheckout">
+                  </a> <!-- verifyPlaceOrderRegisterBeforeCheckout -->
+                  <span class="method-name">verifyPlaceOrderRegisterBeforeCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case12_AddProductCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddProductsInCart">
+                  </a> <!-- verifyAddProductsInCart -->
+                  <span class="method-name">verifyAddProductsInCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case23_AddressDetailsInCheckout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddressDetailsInCheckoutPage">
+                  </a> <!-- verifyAddressDetailsInCheckoutPage -->
+                  <span class="method-name">verifyAddressDetailsInCheckoutPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case03_InvalidLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentials">
+                  </a> <!-- loginWithValidCredentials -->
+                  <span class="method-name">loginWithValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
+          <div class="suite-regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">automationexercise.Case04_LogoutUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutUser">
+                  </a> <!-- logoutUser -->
+                  <span class="method-name">logoutUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-regression_suite-class-passed -->
         </div> <!-- panel regression_suite -->
         <div panel-name="test-xml-regression_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\PNT\eclipse-workspace\Aug2023SeleniumProject1\src\test\resources\runner.xml</span>
+            <span class="header-content">D:\fiverr\zzz\atiqrafi\Aug2023SeleniumProject\src\test\resources\runner.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -179,15 +685,39 @@
   &lt;parameter name=&quot;os&quot; value=&quot;OS X&quot;/&gt;
   &lt;parameter name=&quot;envName&quot; value=&quot;browserstack&quot;/&gt;
   &lt;parameter name=&quot;os_version&quot; value=&quot;Big Sur&quot;/&gt;
-  &lt;parameter name=&quot;browserName&quot; value=&quot;edge&quot;/&gt;
+  &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
   &lt;parameter name=&quot;browser_version&quot; value=&quot;110&quot;/&gt;
-  &lt;parameter name=&quot;url&quot; value=&quot;http://www.saucedemo.com&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;login sauce demo test&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;http://www.automationexercise.com&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;automation exercise demo test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;saucedemotest.ValidLoginTest&quot;/&gt;
-      &lt;class name=&quot;saucedemotest.InvalidLoginTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case01_RegisterUserTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case02_ValidLoginTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case03_InvalidLoginTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case04_LogoutUserTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case05_InvalidSignupTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case06_ContactUsTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case07_TestCasesPageTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case08_ProductsDetailsTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case09_SearchProductTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case10_SubscriptionTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case11_SubscriptionCartTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case12_AddProductCart&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case13_ProductQuantityCartTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case14_PlaceOrderRegisterWhileCheckoutTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case15_PlaceOrderRegisterBeforeCheckoutTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case16_PlaceOrderLoginBeforeCheckoutTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case17_RemoveProductsFromCartTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case18_ViewCategoryProductsTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case19_ViewCartBrandProductsTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case20_SearchProductsVerifyCartAfterLoginTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case21_AddReviewOnProduct&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case22_AddRecommendedItemInCart&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case23_AddressDetailsInCheckout&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case24_DownloadPurchaseOrderInvoice&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case25_ScrollUpDownUsingArrowBtnTest&quot;/&gt;
+      &lt;class name=&quot;automationexercise.Case26_ScrollUpWithoutArrowBtnAndScrollDown&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- login sauce demo test --&gt;
+  &lt;/test&gt; &lt;!-- automation exercise demo test --&gt;
 &lt;/suite&gt; &lt;!-- regression suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -199,7 +729,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">login sauce demo test (2 classes)</span>
+                <span class="test-name">automation exercise demo test (26 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -225,24 +755,116 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(26);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginWithValidCredentials')
-data.setCell(0, 2, 'saucedemotest.ValidLoginTest')
-data.setCell(0, 3, 590);
+data.setCell(0, 1, 'verifyPlaceOrderRegisterWhileCheckout')
+data.setCell(0, 2, 'automationexercise.Case14_PlaceOrderRegisterWhileCheckoutTest')
+data.setCell(0, 3, 47895);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginWithValidUsernameAndInvalidPassword')
-data.setCell(1, 2, 'saucedemotest.InvalidLoginTest')
-data.setCell(1, 3, 289);
+data.setCell(1, 1, 'verifyDownloadInvoiceAfterPurchaseOrder')
+data.setCell(1, 2, 'automationexercise.Case24_DownloadPurchaseOrderInvoice')
+data.setCell(1, 3, 46459);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginWithInvalidUsernameAndValidPassword')
-data.setCell(2, 2, 'saucedemotest.InvalidLoginTest')
-data.setCell(2, 3, 248);
+data.setCell(2, 1, 'verifyCaseSearchProductsAndVerifyCartAfterLogin')
+data.setCell(2, 2, 'automationexercise.Case20_SearchProductsVerifyCartAfterLoginTest')
+data.setCell(2, 3, 43406);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyPlaceOrderRegisterBeforeCheckout')
+data.setCell(3, 2, 'automationexercise.Case15_PlaceOrderRegisterBeforeCheckoutTest')
+data.setCell(3, 3, 41121);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyPlaceOrderLoginBeforeCheckout')
+data.setCell(4, 2, 'automationexercise.Case16_PlaceOrderLoginBeforeCheckoutTest')
+data.setCell(4, 3, 40363);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyAddProductsInCart')
+data.setCell(5, 2, 'automationexercise.Case12_AddProductCart')
+data.setCell(5, 3, 39737);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyAddressDetailsInCheckoutPage')
+data.setCell(6, 2, 'automationexercise.Case23_AddressDetailsInCheckout')
+data.setCell(6, 3, 30290);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyAllProductsAndProductDetailPage')
+data.setCell(7, 2, 'automationexercise.Case08_ProductsDetailsTest')
+data.setCell(7, 3, 21830);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyAddReviewOnProduct')
+data.setCell(8, 2, 'automationexercise.Case21_AddReviewOnProduct')
+data.setCell(8, 3, 20480);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyRemoveProductsFromCart')
+data.setCell(9, 2, 'automationexercise.Case17_RemoveProductsFromCartTest')
+data.setCell(9, 3, 20265);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'signupWithValidCredentials')
+data.setCell(10, 2, 'automationexercise.Case01_RegisterUserTest')
+data.setCell(10, 3, 19633);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyViewAndCartBrandProducts')
+data.setCell(11, 2, 'automationexercise.Case19_ViewCartBrandProductsTest')
+data.setCell(11, 3, 19065);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'searchProduct')
+data.setCell(12, 2, 'automationexercise.Case09_SearchProductTest')
+data.setCell(12, 3, 18260);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyAddToCartFromRecommendedItems')
+data.setCell(13, 2, 'automationexercise.Case22_AddRecommendedItemInCart')
+data.setCell(13, 3, 17898);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'contactUsForm')
+data.setCell(14, 2, 'automationexercise.Case06_ContactUsTest')
+data.setCell(14, 3, 17822);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'loginWithValidCredentials')
+data.setCell(15, 2, 'automationexercise.Case02_ValidLoginTest')
+data.setCell(15, 3, 17256);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'registerUserWithExistingEmail')
+data.setCell(16, 2, 'automationexercise.Case05_InvalidSignupTest')
+data.setCell(16, 3, 16127);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyViewCategoryProducts')
+data.setCell(17, 2, 'automationexercise.Case18_ViewCategoryProductsTest')
+data.setCell(17, 3, 14774);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'logoutUser')
+data.setCell(18, 2, 'automationexercise.Case04_LogoutUserTest')
+data.setCell(18, 3, 13600);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyProductQuantityInCart')
+data.setCell(19, 2, 'automationexercise.Case13_ProductQuantityCartTest')
+data.setCell(19, 3, 13067);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'loginWithValidCredentials')
+data.setCell(20, 2, 'automationexercise.Case03_InvalidLoginTest')
+data.setCell(20, 3, 11965);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifySubscriptionInHomePage')
+data.setCell(21, 2, 'automationexercise.Case10_SubscriptionTest')
+data.setCell(21, 3, 11628);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyTestCasesPage')
+data.setCell(22, 2, 'automationexercise.Case07_TestCasesPageTest')
+data.setCell(22, 3, 10104);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifySubscriptionInCartPage')
+data.setCell(23, 2, 'automationexercise.Case11_SubscriptionCartTest')
+data.setCell(23, 3, 9992);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyScrollUpUsingArrowButtonAndScrollDownFunctionality')
+data.setCell(24, 2, 'automationexercise.Case25_ScrollUpDownUsingArrowBtnTest')
+data.setCell(24, 3, 9206);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyScrollUpWithoutArrowButtonAndScrollDownFunctionality')
+data.setCell(25, 2, 'automationexercise.Case26_ScrollUpWithoutArrowBtnAndScrollDown')
+data.setCell(25, 3, 9198);
 window.suiteTableData['regression_suite']= { tableData: data, tableDiv: 'times-div-regression_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 9 minutes</span>
               <div id="times-div-regression_suite">
               </div> <!-- times-div-regression_suite -->
             </div> <!-- times-div -->
@@ -257,11 +879,227 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-regression_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">50 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">saucedemotest.InvalidLoginTest</span>
+              <span class="ignored-class-name">automationexercise.Case06_ContactUsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case25_ScrollUpDownUsingArrowBtnTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case02_ValidLoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case13_ProductQuantityCartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case17_RemoveProductsFromCartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case08_ProductsDetailsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case22_AddRecommendedItemInCart</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case19_ViewCartBrandProductsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case05_InvalidSignupTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case07_TestCasesPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case09_SearchProductTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case21_AddReviewOnProduct</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case24_DownloadPurchaseOrderInvoice</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case20_SearchProductsVerifyCartAfterLoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case14_PlaceOrderRegisterWhileCheckoutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case10_SubscriptionTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case16_PlaceOrderLoginBeforeCheckoutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case18_ViewCategoryProductsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case26_ScrollUpWithoutArrowBtnAndScrollDown</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case11_SubscriptionCartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case12_AddProductCart</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case15_PlaceOrderRegisterBeforeCheckoutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case23_AddressDetailsInCheckout</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case03_InvalidLoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">extentSetup</span>
+                <br/>
+                <span class="ignored-method-name">generateReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">automationexercise.Case04_LogoutUserTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">generateReport</span>
                 <br/>
@@ -277,68 +1115,510 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">saucedemotest.ValidLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">automationexercise.Case01_RegisterUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">extentSetup(org.testng.TestRunner@7de35070)</span>
+                <span class="method-name">extentSetup(org.testng.TestRunner@158566f8)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(false, browserstack, OS X, 10, edge, 110, http://www.saucedemo.com)</span>
-                <span class="method-start">73 ms</span>
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">281 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">startExtent(public void saucedemotest.ValidLoginTest.loginWithValidCredentials())</span>
-                <span class="method-start">1691 ms</span>
+                <span class="method-name">startExtent(public void automationexercise.Case01_RegisterUserTest.signupWithValidCredentials())</span>
+                <span class="method-start">10669 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signupWithValidCredentials</span>
+                <span class="method-start">10681 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=signupWithValidCredentials status=SUCCESS method=Case01_RegisterUserTest.signupWith...)</span>
+                <span class="method-start">30316 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case02_ValidLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">31708 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case02_ValidLoginTest.loginWithValidCredentials())</span>
+                <span class="method-start">39701 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCredentials</span>
-                <span class="method-start">1694 ms</span>
+                <span class="method-start">39703 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=loginWithValidCredentials status=SUCCESS method=ValidLoginTest.loginWithValidCreden...)</span>
-                <span class="method-start">2285 ms</span>
+                <span class="method-name">afterEachTestMethod([TestResult name=loginWithValidCredentials status=SUCCESS method=Case02_ValidLoginTest.loginWithVali...)</span>
+                <span class="method-start">56960 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">saucedemotest.InvalidLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">automationexercise.Case03_InvalidLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(false, browserstack, OS X, 10, edge, 110, http://www.saucedemo.com)</span>
-                <span class="method-start">2559 ms</span>
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">58002 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">startExtent(public void saucedemotest.InvalidLoginTest.loginWithInvalidUsernameAndValidPassword())</span>
-                <span class="method-start">3589 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">loginWithInvalidUsernameAndValidPassword</span>
-                <span class="method-start">3590 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=loginWithInvalidUsernameAndValidPassword status=SUCCESS method=InvalidLoginTest.log...)</span>
-                <span class="method-start">3838 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(false, browserstack, OS X, 10, edge, 110, http://www.saucedemo.com)</span>
-                <span class="method-start">4018 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">startExtent(public void saucedemotest.InvalidLoginTest.loginWithValidUsernameAndInvalidPassword())</span>
-                <span class="method-start">5049 ms</span>
+                <span class="method-name">startExtent(public void automationexercise.Case03_InvalidLoginTest.loginWithValidCredentials())</span>
+                <span class="method-start">65890 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginWithValidUsernameAndInvalidPassword</span>
-                <span class="method-start">5050 ms</span>
+                <span class="method-name">loginWithValidCredentials</span>
+                <span class="method-start">65891 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=loginWithValidUsernameAndInvalidPassword status=SUCCESS method=InvalidLoginTest.log...)</span>
-                <span class="method-start">5339 ms</span>
+                <span class="method-name">afterEachTestMethod([TestResult name=loginWithValidCredentials status=SUCCESS method=Case03_InvalidLoginTest.loginWithVa...)</span>
+                <span class="method-start">77857 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">saucedemotest.ValidLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">automationexercise.Case04_LogoutUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">78816 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case04_LogoutUserTest.logoutUser())</span>
+                <span class="method-start">88859 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logoutUser</span>
+                <span class="method-start">88860 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=logoutUser status=SUCCESS method=Case04_LogoutUserTest.logoutUser()[pri:0, instance...)</span>
+                <span class="method-start">102461 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case05_InvalidSignupTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">103398 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case05_InvalidSignupTest.registerUserWithExistingEmail())</span>
+                <span class="method-start">113946 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerUserWithExistingEmail</span>
+                <span class="method-start">113947 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=registerUserWithExistingEmail status=SUCCESS method=Case05_InvalidSignupTest.regist...)</span>
+                <span class="method-start">130074 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case06_ContactUsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">131018 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">contactUsForm</span>
+                <span class="method-start">138703 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case06_ContactUsTest.contactUsForm())</span>
+                <span class="method-start">138703 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=contactUsForm status=SUCCESS method=Case06_ContactUsTest.contactUsForm()[pri:0, ins...)</span>
+                <span class="method-start">156525 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case07_TestCasesPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">157478 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case07_TestCasesPageTest.verifyTestCasesPage())</span>
+                <span class="method-start">165359 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyTestCasesPage</span>
+                <span class="method-start">165360 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyTestCasesPage status=SUCCESS method=Case07_TestCasesPageTest.verifyTestCasesP...)</span>
+                <span class="method-start">175464 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case08_ProductsDetailsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">176440 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case08_ProductsDetailsTest.verifyAllProductsAndProductDetailPage())</span>
+                <span class="method-start">185859 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAllProductsAndProductDetailPage</span>
+                <span class="method-start">185860 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyAllProductsAndProductDetailPage status=SUCCESS method=Case08_ProductsDetailsT...)</span>
+                <span class="method-start">207691 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case09_SearchProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">208759 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case09_SearchProductTest.searchProduct())</span>
+                <span class="method-start">216818 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchProduct</span>
+                <span class="method-start">216823 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=searchProduct status=SUCCESS method=Case09_SearchProductTest.searchProduct()[pri:0,...)</span>
+                <span class="method-start">235084 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case10_SubscriptionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">236107 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case10_SubscriptionTest.verifySubscriptionInHomePage())</span>
+                <span class="method-start">247243 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySubscriptionInHomePage</span>
+                <span class="method-start">247244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifySubscriptionInHomePage status=SUCCESS method=Case10_SubscriptionTest.verifySu...)</span>
+                <span class="method-start">258872 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case11_SubscriptionCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">259857 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case11_SubscriptionCartTest.verifySubscriptionInCartPage())</span>
+                <span class="method-start">269674 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySubscriptionInCartPage</span>
+                <span class="method-start">269675 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifySubscriptionInCartPage status=SUCCESS method=Case11_SubscriptionCartTest.veri...)</span>
+                <span class="method-start">279667 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case12_AddProductCart</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">280707 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case12_AddProductCart.verifyAddProductsInCart())</span>
+                <span class="method-start">288654 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddProductsInCart</span>
+                <span class="method-start">288654 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyAddProductsInCart status=SUCCESS method=Case12_AddProductCart.verifyAddProduc...)</span>
+                <span class="method-start">328392 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case13_ProductQuantityCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">329331 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case13_ProductQuantityCartTest.verifyProductQuantityInCart())</span>
+                <span class="method-start">334682 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProductQuantityInCart</span>
+                <span class="method-start">334682 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyProductQuantityInCart status=SUCCESS method=Case13_ProductQuantityCartTest.ve...)</span>
+                <span class="method-start">347750 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case14_PlaceOrderRegisterWhileCheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">349575 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case14_PlaceOrderRegisterWhileCheckoutTest.verifyPlaceOrderRegisterWh...)</span>
+                <span class="method-start">358863 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPlaceOrderRegisterWhileCheckout</span>
+                <span class="method-start">358864 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyPlaceOrderRegisterWhileCheckout status=SUCCESS method=Case14_PlaceOrderRegist...)</span>
+                <span class="method-start">406759 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case15_PlaceOrderRegisterBeforeCheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">407796 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case15_PlaceOrderRegisterBeforeCheckoutTest.verifyPlaceOrderRegisterB...)</span>
+                <span class="method-start">417586 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPlaceOrderRegisterBeforeCheckout</span>
+                <span class="method-start">417588 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyPlaceOrderRegisterBeforeCheckout status=SUCCESS method=Case15_PlaceOrderRegis...)</span>
+                <span class="method-start">458709 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case16_PlaceOrderLoginBeforeCheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">459799 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case16_PlaceOrderLoginBeforeCheckoutTest.verifyPlaceOrderLoginBeforeC...)</span>
+                <span class="method-start">469182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPlaceOrderLoginBeforeCheckout</span>
+                <span class="method-start">469185 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyPlaceOrderLoginBeforeCheckout status=SUCCESS method=Case16_PlaceOrderLoginBef...)</span>
+                <span class="method-start">509549 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case17_RemoveProductsFromCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">510481 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case17_RemoveProductsFromCartTest.verifyRemoveProductsFromCart())</span>
+                <span class="method-start">518064 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRemoveProductsFromCart</span>
+                <span class="method-start">518164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyRemoveProductsFromCart status=SUCCESS method=Case17_RemoveProductsFromCartTes...)</span>
+                <span class="method-start">538430 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case18_ViewCategoryProductsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">539429 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case18_ViewCategoryProductsTest.verifyViewCategoryProducts())</span>
+                <span class="method-start">548190 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyViewCategoryProducts</span>
+                <span class="method-start">548191 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyViewCategoryProducts status=SUCCESS method=Case18_ViewCategoryProductsTest.ve...)</span>
+                <span class="method-start">562965 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case19_ViewCartBrandProductsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">563913 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case19_ViewCartBrandProductsTest.verifyViewAndCartBrandProducts())</span>
+                <span class="method-start">571741 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyViewAndCartBrandProducts</span>
+                <span class="method-start">571742 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyViewAndCartBrandProducts status=SUCCESS method=Case19_ViewCartBrandProductsTe...)</span>
+                <span class="method-start">590807 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case20_SearchProductsVerifyCartAfterLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">591705 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case20_SearchProductsVerifyCartAfterLoginTest.verifyCaseSearchProduct...)</span>
+                <span class="method-start">601254 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCaseSearchProductsAndVerifyCartAfterLogin</span>
+                <span class="method-start">601254 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyCaseSearchProductsAndVerifyCartAfterLogin status=SUCCESS method=Case20_Search...)</span>
+                <span class="method-start">644660 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case21_AddReviewOnProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">645630 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case21_AddReviewOnProduct.verifyAddReviewOnProduct())</span>
+                <span class="method-start">653455 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAddReviewOnProduct</span>
+                <span class="method-start">653455 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyAddReviewOnProduct status=FAILURE method=Case21_AddReviewOnProduct.verifyAddR...)</span>
+                <span class="method-start">673941 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case22_AddRecommendedItemInCart</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">674865 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case22_AddRecommendedItemInCart.verifyAddToCartFromRecommendedItems())</span>
+                <span class="method-start">684947 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddToCartFromRecommendedItems</span>
+                <span class="method-start">684948 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyAddToCartFromRecommendedItems status=SUCCESS method=Case22_AddRecommendedItem...)</span>
+                <span class="method-start">702847 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case23_AddressDetailsInCheckout</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">704030 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case23_AddressDetailsInCheckout.verifyAddressDetailsInCheckoutPage())</span>
+                <span class="method-start">711559 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddressDetailsInCheckoutPage</span>
+                <span class="method-start">711560 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyAddressDetailsInCheckoutPage status=SUCCESS method=Case23_AddressDetailsInChe...)</span>
+                <span class="method-start">741850 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case24_DownloadPurchaseOrderInvoice</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">742779 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case24_DownloadPurchaseOrderInvoice.verifyDownloadInvoiceAfterPurchas...)</span>
+                <span class="method-start">753059 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDownloadInvoiceAfterPurchaseOrder</span>
+                <span class="method-start">753060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyDownloadInvoiceAfterPurchaseOrder status=SUCCESS method=Case24_DownloadPurcha...)</span>
+                <span class="method-start">799523 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case25_ScrollUpDownUsingArrowBtnTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">800437 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case25_ScrollUpDownUsingArrowBtnTest.verifyScrollUpUsingArrowButtonAn...)</span>
+                <span class="method-start">807903 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyScrollUpUsingArrowButtonAndScrollDownFunctionality</span>
+                <span class="method-start">807905 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyScrollUpUsingArrowButtonAndScrollDownFunctionality status=SUCCESS method=Case...)</span>
+                <span class="method-start">817111 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case26_ScrollUpWithoutArrowBtnAndScrollDown</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, browserstack, OS X, 10, chrome, 110, http://www.automationexercise.com)</span>
+                <span class="method-start">818132 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void automationexercise.Case26_ScrollUpWithoutArrowBtnAndScrollDown.verifyScrollUpWithoutArro...)</span>
+                <span class="method-start">827464 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</span>
+                <span class="method-start">827465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTestMethod([TestResult name=verifyScrollUpWithoutArrowButtonAndScrollDownFunctionality status=SUCCESS method=Ca...)</span>
+                <span class="method-start">836663 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">automationexercise.Case01_RegisterUserTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">generateReport</span>
-                <span class="method-start">5511 ms</span>
+                <span class="method-start">837691 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

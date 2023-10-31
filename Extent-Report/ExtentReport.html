@@ -54,7 +54,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2023-10-26 14:37:45</span>
+					<span class='suite-started-time'>2023-10-31 16:41:42</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -84,25 +84,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 0m 9s+200ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 1m 52s+254ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 0m 9s+200ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 1m 52s+254ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2023-10-26 14:37:36</span> 
+							<span class='panel-lead suite-started-time'>2023-10-31 16:39:50</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2023-10-26 14:37:45</span> 
+							<span class='panel-lead suite-ended-time'>2023-10-31 16:41:42</span> 
 						</div> 
 					</div>
 				</div>
@@ -205,12 +205,37 @@
 									<tbody>
 											<tr>
 												<td>
-													InvalidLoginTest
+													Case01_RegisterUserTest
 												</td>
 											</tr>
 											<tr>
 												<td>
-													ValidLoginTest
+													Case02_ValidLoginTest
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Case03_InvalidLoginTest
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Case04_LogoutUserTest
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Case05_InvalidSignupTest
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Case06_ContactUsTest
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Case07_TestCasesPageTest
 												</td>
 											</tr>
 									</tbody>
@@ -246,8 +271,13 @@
 										<i class='mdi-maps-local-offer'></i>
 									</a>
 									<ul id='category-toggle' class='dropdown-content'>
-											<li class='InvalidLoginTest'><a href='#!'>InvalidLoginTest</a></li>
-											<li class='ValidLoginTest'><a href='#!'>ValidLoginTest</a></li>
+											<li class='Case01_RegisterUserTest'><a href='#!'>Case01_RegisterUserTest</a></li>
+											<li class='Case02_ValidLoginTest'><a href='#!'>Case02_ValidLoginTest</a></li>
+											<li class='Case03_InvalidLoginTest'><a href='#!'>Case03_InvalidLoginTest</a></li>
+											<li class='Case04_LogoutUserTest'><a href='#!'>Case04_LogoutUserTest</a></li>
+											<li class='Case05_InvalidSignupTest'><a href='#!'>Case05_InvalidSignupTest</a></li>
+											<li class='Case06_ContactUsTest'><a href='#!'>Case06_ContactUsTest</a></li>
+											<li class='Case07_TestCasesPageTest'><a href='#!'>Case07_TestCasesPageTest</a></li>
 										<li class='divider'></li>
 										<li class='clear'><a href='#!'>Clear Filters</a></li>
 									</ul>
@@ -279,22 +309,62 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active pass ' extentid='b8f142f5-eee5-40ed-ae8a-b879bec34d25'>
+										<li class='collection-item test displayed active pass ' extentid='fc6dce64-563e-4969-ac13-898d811a9c78'>
+											<div class='test-head'>
+												<span class='test-name'>signupWithValidCredentials </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  case01_registerusertest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-10-31 16:39:59</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-10-31 16:40:09</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+588ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Case01_RegisterUserTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>16:40:09</td>
+																	<td class='step-details'>Test Passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='466ab568-9f5d-4963-a386-cce1e49bd716'>
 											<div class='test-head'>
 												<span class='test-name'>loginWithValidCredentials </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide  validlogintest'></span>
+												<span class='category-assigned hide  case02_validlogintest'></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-10-26 14:37:39</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-10-26 14:37:40</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+203ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-10-31 16:40:17</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-10-31 16:40:25</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+609ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
 														<div class='categories'>
-																<span class='category text-white'>ValidLoginTest</span>
+																<span class='category text-white'>Case02_ValidLoginTest</span>
 														</div>
 												</div>
 												<div class='test-steps'>
@@ -309,7 +379,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:37:40</td>
+																	<td class='timestamp'>16:40:25</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -319,22 +389,22 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='52d6a136-30f2-47b3-902b-c592de30ce66'>
+										<li class='collection-item test displayed active pass ' extentid='fdd0b5a7-4aa7-4577-b3e3-d55ebb917cfb'>
 											<div class='test-head'>
-												<span class='test-name'>loginWithInvalidUsernameAndValidPassword </span>
+												<span class='test-name'>loginWithValidCredentials </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide  invalidlogintest'></span>
+												<span class='category-assigned hide  case03_invalidlogintest'></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-10-26 14:37:42</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-10-26 14:37:43</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+487ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-10-31 16:40:33</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-10-31 16:40:40</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+168ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
 														<div class='categories'>
-																<span class='category text-white'>InvalidLoginTest</span>
+																<span class='category text-white'>Case03_InvalidLoginTest</span>
 														</div>
 												</div>
 												<div class='test-steps'>
@@ -349,7 +419,7 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:37:43</td>
+																	<td class='timestamp'>16:40:40</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -359,22 +429,22 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='18a21343-3c36-4d8d-a306-16cc38c3089e'>
+										<li class='collection-item test displayed active pass ' extentid='2c04a116-42ce-4e7b-9029-bfbe2f38af2a'>
 											<div class='test-head'>
-												<span class='test-name'>loginWithValidUsernameAndInvalidPassword </span>
+												<span class='test-name'>logoutUser </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide  invalidlogintest'></span>
+												<span class='category-assigned hide  case04_logoutusertest'></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-10-26 14:37:44</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-10-26 14:37:45</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 0s+551ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-10-31 16:40:48</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-10-31 16:40:57</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+758ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
 														<div class='categories'>
-																<span class='category text-white'>InvalidLoginTest</span>
+																<span class='category text-white'>Case04_LogoutUserTest</span>
 														</div>
 												</div>
 												<div class='test-steps'>
@@ -389,7 +459,127 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>14:37:45</td>
+																	<td class='timestamp'>16:40:57</td>
+																	<td class='step-details'>Test Passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='28e1faa6-6029-4a7b-b82b-0d382c4fdee2'>
+											<div class='test-head'>
+												<span class='test-name'>registerUserWithExistingEmail </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  case05_invalidsignuptest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-10-31 16:41:04</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-10-31 16:41:12</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+639ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Case05_InvalidSignupTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>16:41:12</td>
+																	<td class='step-details'>Test Passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='3260ac53-d299-4a8f-842a-f54b4ad49b6c'>
+											<div class='test-head'>
+												<span class='test-name'>contactUsForm </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  case06_contactustest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-10-31 16:41:19</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-10-31 16:41:28</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+641ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Case06_ContactUsTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>16:41:28</td>
+																	<td class='step-details'>Test Passed</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass ' extentid='b9e7a3c4-f8e5-498e-ab7b-86e565abaadb'>
+											<div class='test-head'>
+												<span class='test-name'>verifyTestCasesPage </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  case07_testcasespagetest'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2023-10-31 16:41:36</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2023-10-31 16:41:42</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+705ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>Case07_TestCasesPageTest</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>16:41:42</td>
 																	<td class='step-details'>Test Passed</td>
 																</tr>
 														</tbody>
@@ -448,47 +638,7 @@
 									<ul id='cat-collection' class='cat-collection'>
 											<li class='category-item displayed'>
 												<div class='cat-head'>
-													<span class='category-name'>InvalidLoginTest</span>
-												</div>
-												<div class='category-status-counts'>
-														<span class='pass label dot'>Pass: 2</span>
-												</div>
-												<div class='cat-body'>
-													<div class='category-status-counts'>
-														<div class='button-group'>
-															<a href='#!' class='pass label filter'>Pass <span class='icon'>2</span></a>
-															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
-															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
-														</div>
-													</div>
-													<div class='cat-tests'>
-														<table class='bordered'>
-															<thead>
-																<tr>
-																	<th>RunDate</th>
-																	<th>Test Name</th>
-																	<th>Status</th>
-																</tr>
-															</thead>
-															<tbody>
-																	<tr class='pass'>
-																		<td>2023-10-26 14:37:42</td>
-																		<td><span class='category-link linked' extentid='52d6a136-30f2-47b3-902b-c592de30ce66'>loginWithInvalidUsernameAndValidPassword</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
-																	</tr>
-																	<tr class='pass'>
-																		<td>2023-10-26 14:37:44</td>
-																		<td><span class='category-link linked' extentid='18a21343-3c36-4d8d-a306-16cc38c3089e'>loginWithValidUsernameAndInvalidPassword</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
-																	</tr>
-															<tbody>
-														</table>
-													</div>
-												</div> 
-											</li>
-											<li class='category-item displayed'>
-												<div class='cat-head'>
-													<span class='category-name'>ValidLoginTest</span>
+													<span class='category-name'>Case01_RegisterUserTest</span>
 												</div>
 												<div class='category-status-counts'>
 														<span class='pass label dot'>Pass: 1</span>
@@ -512,8 +662,218 @@
 															</thead>
 															<tbody>
 																	<tr class='pass'>
-																		<td>2023-10-26 14:37:39</td>
-																		<td><span class='category-link linked' extentid='b8f142f5-eee5-40ed-ae8a-b879bec34d25'>loginWithValidCredentials</span></td>
+																		<td>2023-10-31 16:39:59</td>
+																		<td><span class='category-link linked' extentid='fc6dce64-563e-4969-ac13-898d811a9c78'>signupWithValidCredentials</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+															<tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>Case02_ValidLoginTest</span>
+												</div>
+												<div class='category-status-counts'>
+														<span class='pass label dot'>Pass: 1</span>
+												</div>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Status</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr class='pass'>
+																		<td>2023-10-31 16:40:17</td>
+																		<td><span class='category-link linked' extentid='466ab568-9f5d-4963-a386-cce1e49bd716'>loginWithValidCredentials</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+															<tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>Case03_InvalidLoginTest</span>
+												</div>
+												<div class='category-status-counts'>
+														<span class='pass label dot'>Pass: 1</span>
+												</div>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Status</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr class='pass'>
+																		<td>2023-10-31 16:40:33</td>
+																		<td><span class='category-link linked' extentid='fdd0b5a7-4aa7-4577-b3e3-d55ebb917cfb'>loginWithValidCredentials</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+															<tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>Case04_LogoutUserTest</span>
+												</div>
+												<div class='category-status-counts'>
+														<span class='pass label dot'>Pass: 1</span>
+												</div>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Status</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr class='pass'>
+																		<td>2023-10-31 16:40:48</td>
+																		<td><span class='category-link linked' extentid='2c04a116-42ce-4e7b-9029-bfbe2f38af2a'>logoutUser</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+															<tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>Case05_InvalidSignupTest</span>
+												</div>
+												<div class='category-status-counts'>
+														<span class='pass label dot'>Pass: 1</span>
+												</div>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Status</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr class='pass'>
+																		<td>2023-10-31 16:41:04</td>
+																		<td><span class='category-link linked' extentid='28e1faa6-6029-4a7b-b82b-0d382c4fdee2'>registerUserWithExistingEmail</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+															<tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>Case06_ContactUsTest</span>
+												</div>
+												<div class='category-status-counts'>
+														<span class='pass label dot'>Pass: 1</span>
+												</div>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Status</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr class='pass'>
+																		<td>2023-10-31 16:41:19</td>
+																		<td><span class='category-link linked' extentid='3260ac53-d299-4a8f-842a-f54b4ad49b6c'>contactUsForm</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+															<tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>Case07_TestCasesPageTest</span>
+												</div>
+												<div class='category-status-counts'>
+														<span class='pass label dot'>Pass: 1</span>
+												</div>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Status</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr class='pass'>
+																		<td>2023-10-31 16:41:36</td>
+																		<td><span class='category-link linked' extentid='b9e7a3c4-f8e5-498e-ab7b-86e565abaadb'>verifyTestCasesPage</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 															<tbody>
