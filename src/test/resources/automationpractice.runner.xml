@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="regression suite">
+    <parameter name="useCloudEnv" value="false"></parameter>
+
+<!--cloud parameters-->
+    <parameter name="envName" value="browserstack"></parameter>
+    <parameter name="os" value="OS X"></parameter>
+    <parameter name="os_version" value="Big Sur"></parameter>
+    <parameter name="browser_version" value="110"></parameter>
+<!--local & cloud parameters-->
+    <parameter name="url" value="http://www.automationexercise.com"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+
+    <test name="automation exercise demo test">
+        <classes>
+            <class name="automationexercise.Case01_RegisterUserTest"></class>
+            <class name="automationexercise.Case02_ValidLoginTest"></class>
+            <class name="automationexercise.Case03_InvalidLoginTest"></class>
+            <class name="automationexercise.Case04_LogoutUserTest"></class>
+            <class name="automationexercise.Case05_InvalidSignupTest"></class>
+            <class name="automationexercise.Case06_ContactUsTest"></class>
+            <class name="automationexercise.Case07_TestCasesPageTest"></class>
+            <class name="automationexercise.Case08_ProductsDetailsTest"></class>
+            <class name="automationexercise.Case09_SearchProductTest"></class>
+            <class name="automationexercise.Case10_SubscriptionTest"></class>
+            <class name="automationexercise.Case11_SubscriptionCartTest"></class>
+            <class name="automationexercise.Case12_AddProductCart"></class>
+            <class name="automationexercise.Case13_ProductQuantityCartTest"></class>
+            <class name="automationexercise.Case14_PlaceOrderRegisterWhileCheckoutTest"></class>
+            <class name="automationexercise.Case15_PlaceOrderRegisterBeforeCheckoutTest"></class>
+            <class name="automationexercise.Case16_PlaceOrderLoginBeforeCheckoutTest"></class>
+            <class name="automationexercise.Case17_RemoveProductsFromCartTest"></class>
+            <class name="automationexercise.Case18_ViewCategoryProductsTest"></class>
+            <class name="automationexercise.Case19_ViewCartBrandProductsTest"></class>
+            <class name="automationexercise.Case20_SearchProductsVerifyCartAfterLoginTest"></class>
+            <class name="automationexercise.Case21_AddReviewOnProduct"></class>
+            <class name="automationexercise.Case22_AddRecommendedItemInCart"></class>
+            <class name="automationexercise.Case23_AddressDetailsInCheckout"></class>
+            <class name="automationexercise.Case24_DownloadPurchaseOrderInvoice"></class>
+            <class name="automationexercise.Case25_ScrollUpDownUsingArrowBtnTest"></class>
+            <class name="automationexercise.Case26_ScrollUpWithoutArrowBtnAndScrollDown"></class>
+        </classes>
+    </test>
+</suite>
