@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="regression suite">
+    <parameter name="useCloudEnv" value="false"></parameter>
+
+    <!--cloud parameters-->
+    <parameter name="envName" value="browserstack"></parameter>
+    <parameter name="os" value="OS X"></parameter>
+    <parameter name="os_version" value="Big Sur"></parameter>
+    <parameter name="browser_version" value="110"></parameter>
+    <!--local & cloud parameters-->
+    <parameter name="url" value="https://demo.nopcommerce.com/"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+
+    <test name="automation exercise demo test">
+        <classes>
+            <class name="nopcommerce.test1_RegisterUser"></class>
+            <class name="nopcommerce.test2_ValidLogin"></class>
+            <class name="nopcommerce.test3_InvalidLogin"></class>
+            <class name="nopcommerce.test4_LogoutUser"></class>
+            <class name="nopcommerce.test5_InvalidSignup"></class>
+            <class name="nopcommerce.test6_ContactUs"></class>
+            <class name="nopcommerce.test7_TestCasesPage"></class>
+            <class name="nopcommerce.test8_ProductsDetails"></class>
+            <class name="nopcommerce.test9_SearchProduct"></class>
+            <class name="nopcommerce.test10_AddProductCart"></class>
+            <class name="nopcommerce.test11_ProductQuantityCart"></class>
+            <class name="nopcommerce.Case12_PlaceOrderRegisterWhileCheckoutTest"></class>
+            <class name="nopcommerce.test13_PlaceOrderRegisterBeforeCheckout"></class>
+            <class name="nopcommerce.test14_PlaceOrderLoginBeforeCheckout"></class>
+            <class name="nopcommerce.test15_RemoveProductsFromCart"></class>
+            <class name="nopcommerce.test16_ViewCategoryProducts"></class>
+            <class name="nopcommerce.test17_ViewCartBrandProducts"></class>
+            <class name="nopcommerce.test18_SearchProductsVerifyCartAfterLogin"></class>
+            <class name="nopcommerce.test19_AddReviewOnProduct"></class>
+            <class name="nopcommerce.test20_AddRecommendedItemInCart"></class>
+            <class name="nopcommerce.test21_ScrollUpDownUsingArrowBtnTest"></class>
+
+        </classes>
+    </test>
+</suite>
