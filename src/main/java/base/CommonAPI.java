@@ -70,6 +70,7 @@ public class CommonAPI {
         ExtentTestManager.startTest(method.getName());
         ExtentTestManager.getTest().assignCategory(className);
     }
+
     protected String getStackTrace(Throwable t) {
         StringWriter sw = new StringWriter();
         PrintWriter pw = new PrintWriter(sw);
@@ -102,6 +103,7 @@ public class CommonAPI {
 //        }
         driver.quit();
     }
+
     @AfterSuite
     public void generateReport() {
         extent.close();
@@ -118,28 +120,29 @@ public class CommonAPI {
         cap.setCapability("os", os);
         cap.setCapability("os_version", osVersion);
         cap.setCapability("browser", browserName);
-        if (envName.equalsIgnoreCase("browserstack")){
+        if (envName.equalsIgnoreCase("browserstack")) {
             cap.setCapability("browser_version", browserVersion);
-            driver = new RemoteWebDriver(new URL("http://"+username+":"+password+"@hub-cloud.browserstack.com:80/wd/hub"), cap);
-        }else if (envName.equalsIgnoreCase("saucelabs")){
-            driver = new RemoteWebDriver(new URL("http://"+username+":"+password+"@ondemand.saucelabs.com:80/wd/hub"), cap);
+            driver = new RemoteWebDriver(new URL("http://" + username + ":" + password + "@hub-cloud.browserstack.com:80/wd/hub"), cap);
+        } else if (envName.equalsIgnoreCase("saucelabs")) {
+            driver = new RemoteWebDriver(new URL("http://" + username + ":" + password + "@ondemand.saucelabs.com:80/wd/hub"), cap);
         }
     }
-    public void getLocalDriver(String browserName){
-        if (browserName.equalsIgnoreCase("chrome")){
+
+    public void getLocalDriver(String browserName) {
+        if (browserName.equalsIgnoreCase("chrome")) {
             ChromeOptions opt = new ChromeOptions();
             opt.addExtensions(new File(getAdBlockExtensionPath()));
             WebDriverManager.chromedriver().setup();
             //launch the browser
             driver = new ChromeDriver(opt);
             LOG.info("chrome browser launched");
-        }else if (browserName.equalsIgnoreCase("firefox")){
+        } else if (browserName.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             //launch the browser
             driver = new FirefoxDriver();
             LOG.info("firefox browser launched");
             System.out.println();
-        }else if (browserName.equalsIgnoreCase("edge")){
+        } else if (browserName.equalsIgnoreCase("edge")) {
             EdgeOptions opt = new EdgeOptions();
             opt.addExtensions(new File(getAdBlockExtensionPath()));
             WebDriverManager.edgedriver().setup();
@@ -149,19 +152,18 @@ public class CommonAPI {
         }
     }
 
-    @Parameters({"useCloudEnv","envName","os","osVersion","browserName","browserVersion","url"})
+    @Parameters({"useCloudEnv", "envName", "os", "osVersion", "browserName", "browserVersion", "url"})
     @BeforeMethod
-    public  void setUp(@Optional("false") boolean useCloudEnv, @Optional("browserstack") String envName, @Optional("windows") String os,
-                       @Optional("10") String osVersion, @Optional("chrome") String browserName, @Optional("110") String browserVersion,
-                       @Optional("https://www.google.com") String url) throws MalformedURLException
-    {
-        if (useCloudEnv){
+    public void setUp(@Optional("false") boolean useCloudEnv, @Optional("browserstack") String envName, @Optional("windows") String os,
+                      @Optional("10") String osVersion, @Optional("chrome") String browserName, @Optional("110") String browserVersion,
+                      @Optional("https://www.google.com") String url) throws MalformedURLException {
+        if (useCloudEnv) {
             getCloudDriver(os, osVersion, browserName, browserVersion, envName);
-        }else {
+        } else {
             getLocalDriver(browserName);
         }
         //Maximize window
-        if(windowMaximize.equalsIgnoreCase("true")){
+        if (windowMaximize.equalsIgnoreCase("true")) {
             driver.manage().window().maximize();
             LOG.info("window maximize");
         }
@@ -172,7 +174,7 @@ public class CommonAPI {
 
         // Navigate to the website
         driver.get(url);
-        LOG.info("navigate to "+url+" ...");
+        LOG.info("navigate to " + url + " ...");
     }
     //------------------------------------------------------------------------------------------------------------------
     //reusable methods (non page object model methods)
@@ -182,49 +184,56 @@ public class CommonAPI {
         return driver;
     }
 
-    public String getCurrentTitle(){
+    public String getCurrentTitle() {
         return driver.getTitle();
     }
 
     //------------------------------------------------------------------------------------------------------------------
     //reusable methods (page object model methods)
     //------------------------------------------------------------------------------------------------------------------
-    public String getElementText(WebElement element){
+    public String getElementText(WebElement element) {
         return element.getText();
     }
-    public void clickOn(WebElement element){
+
+    public void clickOn(WebElement element) {
         element.click();
     }
-    public void scrollToBottom(){
+
+    public void scrollToBottom() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
     }
+
     public void scrollUp() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, 0);");
     }
-    public void scrollToSection(WebElement sectionElement){
+
+    public void scrollToSection(WebElement sectionElement) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'start'});", sectionElement);
     }
-    public void type(WebElement element, String text){
+
+    public void type(WebElement element, String text) {
         element.clear();
         element.sendKeys(text);
     }
-    public void hoverOver(WebElement element){
+
+    public void hoverOver(WebElement element) {
         Actions actions = new Actions(driver);
-            actions.moveToElement(element).build().perform();
+        actions.moveToElement(element).build().perform();
     }
-    public void selectDropdownOption(WebElement element, String option){
+
+    public void selectDropdownOption(WebElement element, String option) {
         Select select = new Select(element);
         try {
             select.selectByValue(option);
-        }catch (Exception e){
+        } catch (Exception e) {
             select.selectByValue(option);
         }
     }
 
-    public String getRandomMail(){
+    public String getRandomMail() {
         // Fixed parts of the email address
         String prefix = "user";
         String domain = "@mail.com";
@@ -238,10 +247,11 @@ public class CommonAPI {
         return randomEmail;
     }
 
-    public void closeAllTabsExceptFirstTab(){
+    public void closeAllTabsExceptFirstTab() {
         try {
             Thread.sleep(5000);
-        } catch (InterruptedException e) {}
+        } catch (InterruptedException e) {
+        }
 
         // Capture the handle of the first tab (tab0)
         String firstTabHandle = driver.getWindowHandles().toArray()[0].toString();
@@ -268,10 +278,30 @@ public class CommonAPI {
         driver.navigate().refresh();
     }
 
-    public String getAdBlockExtensionPath(){
+    public String getAdBlockExtensionPath() {
         String relativeFilePath = "/src/test/resources/adblock.crx";
         String projectRoot = System.getProperty("user.dir");
         String absoluteFilePath = projectRoot + relativeFilePath;
         return absoluteFilePath;
+    }
+
+
+//noshinara's common apis
+
+    public void input(String xpath, String text) {
+        driver.findElement(By.xpath(xpath)).sendKeys(text);
+    }
+
+    public void clickButton(String xpath) {
+        driver.findElement(By.xpath(xpath)).click();
+    }
+
+
+    public void type(String cssOrXpath, String text) {
+        try {
+            driver.findElement(By.cssSelector(text)).sendKeys();
+        } catch (Exception e) {
+            driver.findElement(By.xpath(text)).sendKeys(text);
+        }
     }
 }
