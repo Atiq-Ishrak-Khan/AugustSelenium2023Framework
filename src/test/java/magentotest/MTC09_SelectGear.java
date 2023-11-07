@@ -10,6 +10,8 @@ public class MTC09_SelectGear extends CommonAPI {
     //Open Gear's Bags Successfully
     @Test
     public void test1() throws InterruptedException {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 
@@ -29,6 +31,8 @@ public class MTC09_SelectGear extends CommonAPI {
     //Open Gear's Fitness Equipment Successfully
     @Test
     public void test2() throws InterruptedException {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 
@@ -48,6 +52,8 @@ public class MTC09_SelectGear extends CommonAPI {
     //Open Gear's Watches Successfully
     @Test
     public void test3() throws InterruptedException {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

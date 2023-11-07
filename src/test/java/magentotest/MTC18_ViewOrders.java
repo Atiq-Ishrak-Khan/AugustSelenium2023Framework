@@ -8,7 +8,9 @@ import org.testng.annotations.Test;
 public class MTC18_ViewOrders extends CommonAPI {
 
     @Test
-    public void test1() {
+    public void test() {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

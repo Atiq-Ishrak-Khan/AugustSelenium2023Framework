@@ -10,6 +10,8 @@ public class MTC13_SubmitReview extends CommonAPI {
     //Add a Review Successfully
     @Test
     public void test1() throws InterruptedException {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 
@@ -42,6 +44,8 @@ public class MTC13_SubmitReview extends CommonAPI {
     //Click on Reviews Successfully
     @Test
     public void test2() throws InterruptedException {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

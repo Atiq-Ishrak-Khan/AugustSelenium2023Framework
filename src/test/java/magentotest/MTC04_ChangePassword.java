@@ -9,7 +9,9 @@ public class MTC04_ChangePassword extends CommonAPI {
 
     //change password successfully
     @Test
-    public void test1() {
+    public void test() {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

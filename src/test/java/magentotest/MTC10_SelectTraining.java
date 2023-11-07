@@ -10,6 +10,8 @@ public class MTC10_SelectTraining extends CommonAPI {
     //Open Training Video Download Successfully
     @Test
     public void test() throws InterruptedException {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

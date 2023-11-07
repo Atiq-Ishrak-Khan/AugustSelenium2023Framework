@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 public class MTC17_CompletePurchase extends CommonAPI {
     @Test
     public void test() throws InterruptedException {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 
