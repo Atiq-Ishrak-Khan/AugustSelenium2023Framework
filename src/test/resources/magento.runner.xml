@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http;//testng.org/testng-1.0.dtd">
+<suite name="regression suite">
+
+    <test name="login magento">
+        <classes>
+            <class name="magentotest.MTC01_CreateNewAccount"></class>
+            <class name="magentotest.MTC02_ValidLoginTest"></class>
+            <class name="magentotest.MTC03_InvalidLogin"></class>
+            <class name="magentotest.MTC04_ChangePassword"></class>
+            <class name="magentotest.MTC05_ManageAddresses"></class>
+            <class name="magentotest.MTC06_DropDownMenuSelect"></class>
+            <class name="magentotest.MTC07_SelectWomen"></class>
+            <class name="magentotest.MTC08_SelectMen"></class>
+            <class name="magentotest.MTC09_SelectGear"></class>
+            <class name="magentotest.MTC10_SelectTraining"></class>
+            <class name="magentotest.MTC11_Sale"></class>
+            <class name="magentotest.MTC12_SelectProduct"></class>
+            <class name="magentotest.MTC13_SubmitReview"></class>
+            <class name="magentotest.MTC14_AddToWishlist"></class>
+            <class name="magentotest.MTC15_AddToCart"></class>
+            <class name="magentotest.MTC16_ProceedToCheckout"></class>
+            <class name="magentotest.MTC17_CompletePurchase"></class>
+            <class name="magentotest.MTC18_ViewOrders"></class>
+            <class name="magentotest.MTC19_SearchBar"></class>
+            <class name="magentotest.MTC20_ReorderanOrder"></class>
+
+        </classes>
+    </test>
+</suite>
