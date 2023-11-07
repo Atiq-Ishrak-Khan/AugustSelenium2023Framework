@@ -10,6 +10,8 @@ public class MTC08_SelectMen extends CommonAPI {
     //Open Men's Tops Successfully
     @Test
     public void test1() {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 
@@ -27,6 +29,8 @@ public class MTC08_SelectMen extends CommonAPI {
 
     @Test
     public void test2() {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

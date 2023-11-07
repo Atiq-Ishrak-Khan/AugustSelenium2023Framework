@@ -7,9 +7,14 @@ import org.testng.annotations.Test;
 
 public class MTC11_Sale extends CommonAPI {
 
+
+
     //Open Sale Link Successfully
     @Test
+
     public void test() throws InterruptedException {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

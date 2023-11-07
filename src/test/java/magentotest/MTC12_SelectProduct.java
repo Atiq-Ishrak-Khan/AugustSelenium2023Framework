@@ -9,6 +9,8 @@ public class MTC12_SelectProduct extends CommonAPI {
 
     @Test
     public void test() throws InterruptedException {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

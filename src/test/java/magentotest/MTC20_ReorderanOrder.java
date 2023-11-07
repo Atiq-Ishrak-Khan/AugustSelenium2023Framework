@@ -7,7 +7,9 @@ import org.testng.annotations.Test;
 
 public class MTC20_ReorderanOrder extends CommonAPI {
     @Test
-    public void test1() throws InterruptedException {
+    public void test() throws InterruptedException {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

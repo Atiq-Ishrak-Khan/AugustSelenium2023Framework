@@ -9,7 +9,9 @@ public class MTC03_InvalidLogin extends CommonAPI {
 
     //invalid password successfully
     @Test
-    public void test(){
+    public void test1(){
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 
@@ -22,6 +24,8 @@ public class MTC03_InvalidLogin extends CommonAPI {
     //invalid username successfully
     @Test
     public void test2(){
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

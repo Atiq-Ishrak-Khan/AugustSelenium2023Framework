@@ -13,6 +13,8 @@ public class MTC01_CreateNewAccount extends CommonAPI {
     //open create an account page successfully
     @Test
     public void test1() {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//a[text()='Create an Account']"));
         registerButton.click();
         LOG.info("Open Create an Account page success");
@@ -22,6 +24,8 @@ public class MTC01_CreateNewAccount extends CommonAPI {
     //open Create the account successfully
     @Test
     public void test2() {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//a[text()='Create an Account']"));
         registerButton.click();
         //LOG.info("Open Create an Account page success");

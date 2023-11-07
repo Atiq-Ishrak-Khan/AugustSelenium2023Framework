@@ -10,6 +10,8 @@ public class MTC02_ValidLoginTest extends CommonAPI {
     //test 1: Verify the URL lands on the correct page
     @Test
     public void test(){
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

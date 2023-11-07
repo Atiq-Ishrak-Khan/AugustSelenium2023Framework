@@ -10,6 +10,8 @@ public class MTC06_DropDownMenuSelect extends CommonAPI {
     //select My Account option successfully
     @Test
     public void test1() {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 
@@ -27,6 +29,8 @@ public class MTC06_DropDownMenuSelect extends CommonAPI {
     //select My Wish List option successfully
     @Test
     public void test2() {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 
@@ -43,6 +47,8 @@ public class MTC06_DropDownMenuSelect extends CommonAPI {
     //select sign out option successfully
     @Test
     public void test3() {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

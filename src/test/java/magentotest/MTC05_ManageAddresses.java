@@ -11,6 +11,8 @@ public class MTC05_ManageAddresses extends CommonAPI {
     //select manage addresses successfully
     @Test
     public void test1() {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 
@@ -30,6 +32,8 @@ public class MTC05_ManageAddresses extends CommonAPI {
     //add a new address successfully
     @Test
     public void test2() {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 

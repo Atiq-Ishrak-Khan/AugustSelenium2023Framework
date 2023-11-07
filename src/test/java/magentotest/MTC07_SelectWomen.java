@@ -10,6 +10,8 @@ public class MTC07_SelectWomen extends CommonAPI {
     //Open Women's Tops Successfully
     @Test
     public void test() throws InterruptedException {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 
@@ -30,6 +32,8 @@ public class MTC07_SelectWomen extends CommonAPI {
     //Open Women's Bottoms Successfully
     @Test
     public void test2() throws InterruptedException {
+        driver.get("https://magento.softwaretestingboard.com/");
+
         WebElement registerButton = driver.findElement(By.xpath("//li[@class='authorization-link']"));
         registerButton.click();
 
